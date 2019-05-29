@@ -1,0 +1,24 @@
+download.file("https://github.com/markziemann/SLE712_files/raw/master/week10_files/growth_data.csv" , destfile = "growth_data.csv")
+a<-read.csv("https://github.com/markziemann/SLE712_files/raw/master/week10_files/growth_data.csv")
+a
+mean_northeastinitialaman<-mean(as.matrix(t[1:50,3]))
+sd_northeastinitialaman<-sd(as.matrix(t[1:50,3]))
+mean_northeastinitialaman
+sd_northeastinitialaman
+mean_northeastfinalaman<-mean(as.matrix(t[1:50,6]))
+sd_northeastfinalaman<-sd(as.matrix(t[1:50,6]))
+mean_northeastfinalaman
+sd_northeastfinalaman
+mean_southwestinitialaman<-mean(as.matrix(t[51:100,3]))
+sd_southwestinitialaman<-sd(as.matrix(t[51:100,3]))
+mean_southwestinitialaman
+sd_southwestinitialaman
+mean_southwestfinalaman<-mean(as.matrix(t[51:100,6]))    
+sd_southwestfinalaman<-sd(as.matrix(t[51:100,6]))
+mean_southwestfinalaman
+sd_southwestfinalaman
+mean_southwestinitialaman
+boxplot(t$Circumf_1999_cm[1:50],ylab="North east initial")
+boxplot(t$Circumf_2019_cm[1:50],ylab="North east final")
+boxplot(t$Circumf_1999_cm[51:100],ylab="South west initial")
+boxplot(t$Circumf_2019_cm[51:100],ylab="South west final")
